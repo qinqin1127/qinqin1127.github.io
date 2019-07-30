@@ -1,0 +1,125 @@
+.bannerbox {
+            width:100%;
+            position:relative;
+            overflow:hidden;
+            height:690px;
+        }
+.banner {
+            width:1920px; /*图片宽度*/
+            position:absolute;
+            left:50%;/*固定图像中点的位置*/
+            margin-left:-960px; /*图片宽度的一半*/
+        }
+		
+.nav {
+            width:1920px; /*图片宽度*/
+            position:absolute;
+            left:50%;/*固定图像中点的位置*/
+            margin-left:-960px; /*图片宽度的一半*/            			
+			top:60px;
+			height:56px;
+			background-color:#5c72f8;
+        }
+
+.search{
+			position:absolute;
+			top:30px;
+			left:50%;
+			margin-left:400px;
+	}
+	
+.logo {
+			height: 52px;
+			width: 114px;
+			position:absolute;
+			left:50%;
+			margin-left:-600px;
+}
+		
+ul
+		{
+		list-style-type:none;
+		margin:0,auto;
+		padding:0;
+		overflow:hidden;
+		}
+/*水平导航栏
+有两种方法创建横向导航栏。使用内联或浮动的列表项。
+这两种方法都很好，但如果你想链接到具有相同的大小，你必须使用浮动的方法。*/
+li
+		{
+		float:left;   
+		margin:0,auto;
+		}
+a:link,a:visited
+		{
+		display:block;/*显示块元素的链接，让整体变为可点击链接区域（不只是文本），它允许我们指定宽度*/
+		width:120px;
+		font-weight:bold;
+		color:#FFFFFF;
+		/*background-color:#bebebe;*/
+		text-align:center;
+		padding:4px;
+		text-decoration:none;
+		text-transform:uppercase;
+		}
+a:hover,a:active
+		{
+	background-color:#69C;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	color: #FFF;
+		}
+
+#apDiv1 {
+	width:1200px;
+	/*定义div1的相对位置，距离banner40px，固定宽度且居中*/
+	position: relative;
+	top:40px;
+	margin:0px auto;	
+}
+
+#left {
+	position:absolute;
+	z-index:1;
+	width: 600px;
+}
+
+#right {
+	float: right;
+	width: 560px;
+	z-index:1;
+}
+.title1 {
+	font-family: "微软雅黑";
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+}
+
+#news {
+	position: absolute;
+	left: 300px;
+	float: left;
+	top: 54px;
+	width: 270px;
+}
+#right_news {
+	float: right;
+	width: 270px;
+	position: absolute;
+	top: 54px;
+	left: 940px;
+}
+.title2 {	
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: #333333;
+	line-height:10px;
+}
+
+
+.ys2 {	font-size: 14px;
+	color: #666666;
+	line-height:1.5em;
+}
