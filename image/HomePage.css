@@ -1,0 +1,297 @@
+/* CSS Document 
+所谓的文档流，指的是元素排版布局过程中，元素会自动从左往右，从上往下的流式排列。
+脱离文档流，也就是将元素从普通的布局排版中拿走，其他盒子在定位的时候，会当做脱离文档流的元素不存在而进行定位。
+只有绝对定位absolute和浮动float才会脱离文档流。
+ ---部分无视和完全无视的区别？需要注意的是，使用float脱离文档流时，其他盒子会无视这个元素，但其他盒子内的文本依然会为这个元素让出位置，环绕在周围(可以说是部分无视)。而对于使用absolute position脱离文档流的元素，其他盒子与其他盒子内的文本都会无视它。(可以说是完全无视) 
+ 注意 当初float被设计的时候就是用来完成文本环绕的效果，所以文本不会被挡住，这是float的特性，即float是一种不彻底的脱离文档流方式。无论多么复杂的布局，其基本出发点均是：“如何在一行显示多个div元素”。*/
+.bannerbox {
+            width:100%;
+            position:relative;
+            overflow:hidden;
+            height:690px;
+        }
+.banner {
+            width:1920px; /*图片宽度*/
+            position:absolute;
+            left:50%;/*div左边框位于屏幕中线位置*/
+            margin-left:-960px; /*图片宽度的一半，左边框相对于屏幕中线向左偏移960px*/
+        }
+		
+.nav {
+            width:1920px; /*图片宽度*/
+            position:absolute;
+            left:50%;/*div左边框位于屏幕中线位置*/
+            margin-left:-960px; /*图片宽度的一半*/            			
+			top:60px;
+			height:56px;
+			background-color:#5c72f8;
+        }
+
+.search{
+			position:absolute;
+			top:30px;
+			left:50%;
+			margin-left:400px;
+	}
+	
+.logo {
+			height: 52px;
+			width: 114px;
+			position:absolute;
+			top:62px;
+			left:50%;
+			margin-left:-600px;
+}
+.menu {
+		font-family: "微软雅黑";
+		font-size: 18px;
+		color: #FFFFFF;
+		position:absolute;
+		top:60px;
+		left:50%;
+		transform: translateX(-50%);
+		font-weight: lighter;
+		/*background-color:#CCCCCC;*/
+}		
+.menu ul
+		{
+		list-style-type:none;
+		margin:0,auto;
+		padding:0;
+		overflow:hidden;
+		}
+/*水平导航栏
+有两种方法创建横向导航栏。使用内联或浮动的列表项。
+这两种方法都很好，但如果你想链接到具有相同的大小，你必须使用浮动的方法。*/
+.menu ul li
+		{
+		float:left;   
+		margin:0,auto;
+		}
+.menu a:link,a:visited
+		{
+		display:block;/*显示块元素的链接，让整体变为可点击链接区域（不只是文本），它允许我们指定宽度*/
+		width:120px;
+		color:#FFFFFF;
+		/*background-color:#bebebe;*/
+		text-align:center;
+		padding:4px;
+		text-decoration:none;
+		text-transform:uppercase;
+		}
+.menu a:hover,a:active
+		{
+	font-size: 18px;
+	color: #DDDDDD;
+		}
+
+#apDiv1 {
+	/*background-color:#AAAAAA;*/
+	width:1200px;
+	position: relative;
+	top:40px;
+	margin:0px auto;	/**/
+	font-family: "微软雅黑";	
+}
+
+#left {
+	/*background-color:#CCCCCC;*/
+	width: 580px;
+	float:left;/*实现div板块并排排列（所有板块宽度相加小于父板块宽度）*/
+	margin-right:20px;
+}
+
+#right {
+	/*background-color:#EEEEEE;*/
+	width: 580px;
+	float:left;/*实现div板块并排排列（所有板块宽度相加小于父板块宽度）*/
+	margin-left:20px;
+}
+.title {
+	font-size: 20px;
+	font-weight: bold;
+	color: #333333;
+}
+.pic{
+	width:280px;
+	height:190px;
+	overflow:hidden;
+	float:left;
+}
+.news {
+	/*float: right;带有浮动属性的元素会脱离标准流进行排列布局，脱离标准流后的浮动元素漂浮在正常块元素上面，但是依然占据正常文档流的文本空间*/
+	width: 270px;
+	float:left;
+	margin-left:20px;
+	margin-top:-20px;/*保持与左图顶对齐*/
+	/*position: absolute;
+	top: 54px;
+	left: 940px;*/
+}
+/*为什么不是定义类.head{}而是定义.head a{}？？？*/
+.head a{
+	color: #333333;	
+	font-size: 18px;
+	font-weight: lighter;
+	color: #333333;	
+	text-decoration:none;
+}
+.head a:hover{
+	text-decoration:underline;
+}
+.txt a{
+	font-size: 14px;
+	color: #666666;
+	font-weight: lighter;
+	text-decoration:none;
+}
+.txt a:hover{
+	text-decoration:underline;
+}
+.clear{
+	clear:both;/*解决高度塌陷*/
+}
+.apDiv2 {
+	background-image: url(image/1200.jpg);
+	height: 375px;
+	width: 1200px;
+	position: relative;
+	top: 100px;/*相对于正常文档流的位置，即所有元素均未发生偏移情况下，相对于apDiv1的位置*/
+	margin:0 auto;
+}
+.box{
+	width:400px;
+	height:270px;
+	text-align:center;
+	font-family: "微软雅黑";
+	/*background-color:#999999;*/
+	float:left;
+	margin-top:60px;
+}
+.ys1{
+	font-size:24px;
+	color:#FFFFFF;
+	position:relative;/*需要和定位元素(position:relative/absolute/fixed/sticky)配合使用；*/
+	z-index:1;
+	text-shadow:2px 2px 3px #000;
+}
+/*
+.ys1shadow{
+	font-size:24px;
+	color:#999999;
+	font-weight:bold;
+	position:relative;
+	top:-52px;
+	left:3px;
+	z-index:0;
+}*/
+.div3 {
+	height: 400px;
+	width: 1200px;
+	/*border: thin solid #666666;*/
+	position: relative;
+	top:160px;
+	margin:0px auto;	
+	font-family: "微软雅黑";
+}
+.leftshadow {
+	width:530px;
+	height:300px;
+	box-shadow: 2px 2px 8px #888888;
+	float:left;
+	margin-right:20px;
+	padding-left:20px;
+	padding-right:30px;
+	position: relative;
+}
+.rightshadow{
+	width:530px;
+	height:300px;
+	box-shadow: 2px 2px 8px #888888;
+	float:left;
+	margin-left:20px;
+	padding-left:20px;
+	padding-right:30px;
+	position: relative;
+}
+.div3 p{
+	font-size: 20px;
+	font-weight: bold;
+	color: #333333;	
+}
+.div3 p span{
+	font-size:14px;
+	float:right;
+}
+/*链接的颜色需要单独定义*/
+.div3 p a{
+	text-decoration: none;
+	color: #06C;	
+}
+.div3 p a:hover{
+  	text-decoration: underline;
+  	color: red;
+}
+.leftshadow hr{
+	position:absolute;
+	top:50px;
+}
+.rightshadow hr{
+	position:absolute;
+	top:50px;
+}
+.picbox{
+	float:left;
+}
+.newsbox{
+	width: 370px;
+	float:left;
+	margin-left:20px;
+	margin-top:-20px;/*保持与左图顶对齐*/	
+	overflow:hidden;
+}
+.newsbox ul{
+	padding:0;
+}
+.newsbox ul li{
+  	list-style: none;
+  	height: 30px;
+  	line-height: 30px;
+  	font-size: 14px;
+}
+.newsbox ul li span{
+	float:right;
+}
+.newsbox a{
+  text-decoration: none;
+  color: #06C;
+}
+.newsbox a:hover{
+  text-decoration: underline;
+  color: red;
+}
+.newsbox2{
+	width: 220px;
+	float:left;
+	margin-left:20px;
+	margin-top:-20px;/*保持与左图顶对齐*/	
+
+}
+.newsbox2 ul{
+	padding:0;
+}
+.newsbox2 ul li{
+  	list-style: none;
+  	height: 30px;
+  	line-height: 30px;
+  	font-size: 14px;
+	overflow:hidden;
+}
+.newsbox2 a{
+  text-decoration: none;
+  color: #06C;
+}
+.newsbox2 a:hover{
+  text-decoration: underline;
+  color: red;
+}
