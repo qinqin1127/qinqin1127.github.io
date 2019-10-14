@@ -197,7 +197,7 @@
 .leftshadow {
 	width:530px;
 	height:300px;
-	box-shadow: 1px 1px 12px #888888;
+	box-shadow: 2px 2px 12px #888888;
 	float:left;
 	margin-right:20px;
 	padding-left:20px;
