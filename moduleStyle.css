@@ -50,7 +50,7 @@ body {
 	height: 650px;
 }
 #cosmetic #title2 {
-	position:relative;/*相对于它原始的位置，何为原始的位置？？*/
+	position:relative;/*相对于正常文档流的位置*/
 	top:102px;
 	font-size: 30px;
 	color: #000000;
@@ -60,6 +60,8 @@ body {
 }
 #cosmetic hr{
 	width:102px;
+	position:relative;/*相对于正常文档流的位置*/
+	top:102px;
 }
 #title3 {
 	position:relative;/*相对于它原始的位置；*/
