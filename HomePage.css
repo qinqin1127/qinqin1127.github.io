@@ -295,13 +295,6 @@
   text-decoration: underline;
   color: red;
 }
-.hr
-{
-	height:1px;
-	width:100%;
-	background:#00CCFF;
-	overflow:hidden;
-}
 .titlebox {
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
