@@ -1,0 +1,178 @@
+*{
+	margin:0px;
+	padding:0px;
+}/*对所有元素清除默认保留边距（需要对表格重新定位）*/
+body {
+	background-color: black;
+}
+.page {
+	width: 1120px;
+	height:3600px;
+	background-color: #FFFFFF;
+	margin:0 auto;/*块级块级块级元素水平居中：上下间距为0，左右自动调整*/
+	font-family: "Times New Roman", Times, serif;
+	position:relative;/*对父级设置position:relative属性，对其子级设置position:absolute,实现子级在父级内任意定位*/	
+	text-align: center; /*行内inline元素水平居中：包括文本和图片，html会把图片默认为内联级元素*/
+}
+.header {
+	background-color: #E5E5E5;
+	height: 225px;
+	font-family:Arial Narrow;
+	text-align:center;
+}
+.header p{
+	font-size: 30px;
+	color: #000000;
+	position: relative;
+	top: 72px;
+	letter-spacing: 3px;
+}
+.header table{
+	font-size: 20px;
+	width:900px;
+	height: 40px;
+	position: relative;
+	top:104px;
+	left:50%;
+	margin-left:-450px;
+	letter-spacing: 2px;
+}
+
+.header a {
+	text-decoration: none;
+	color:#333333;
+	/*display: block;表格中的链接不可以成块显示，否则不能居中*/
+}
+.header a:hover {
+	text-decoration: underline;
+	color: #0000FF;
+}
+.header a:visited {
+	color: #999999;
+}
+#cosmetic {
+	height: 650px;
+}
+#cosmetic #title2 {
+	position:relative;/*相对于它原始的位置，何为原始的位置？？*/
+	top:102px;
+	font-size: 30px;
+	color: #000000;
+	font-weight: bold;
+	letter-spacing: 10px;
+	text-indent: 10px;/*首字缩进*/
+}
+#cosmetic hr{
+	width:102px;
+	position:relative;/*相对于它原始的位置；*/
+	top:100px;
+	left:50%;
+	transform: translateX(-50%);
+}
+#title3 {
+	position:relative;/*相对于它原始的位置；*/
+	top:0px;
+	font-size: 40px;
+	color: #000000;
+	font-weight: normal;
+	letter-spacing: 12px;
+	text-indent: 10px;/*首字缩进*/
+}
+#text {
+	font-size: 18px;
+	color: #000000;
+	font-weight: normal;
+	letter-spacing: 2px;
+	position:relative;
+	top:0px;
+	text-indent: 10px;/*首字缩进*/
+}
+
+#whitening {
+	background-color: #E5E5E5;
+	height: 770px;
+}
+#A5C3C8 {
+	position: absolute;/*对父级设置position:relative属性，对其子级设置position:absolute,实现子级在父级内任意定位*/
+	left: 106px;
+	top: 1468px;	
+	width: 370px;
+	height: 382px;
+	background:#A5C3C8;
+}
+#C3E8EF{
+	position:absolute;/*对父级设置position:relative属性，对其子级设置position:absolute,实现子级在父级内任意定位*/
+	top:1517px;
+	left:360px;
+	background: #C3E8EF;
+}
+#flower {
+	position:absolute;/*对父级设置position:relative属性，对其子级设置position:absolute,实现子级在父级内任意定位*/
+	top:1400px;
+	left:864px;
+}
+.textA{
+	font-size: 24px;
+	line-height: 50px;
+	color: #000000;
+	position: absolute;
+	left:170px;
+	top:1580px;
+	z-index:9999;
+	letter-spacing: 2px;
+	text-align: left;
+}
+#facial {
+	position:absolute;/*对父级设置position:relative属性，对其子级设置position:absolute,实现子级在父级内任意定位*/
+	top:1990px;
+	padding-left:134px;/*图片距离左边距距离*/
+}
+#textbox{
+	float:right;/*设置文本块与图片并排显示且向右浮动，位置距离原始位置向右偏离110px*/
+	position:relative;
+	left:110px;	
+	text-align: left;
+}
+#textbox .textB {
+	font-size: 24px;
+	color: #333333;
+}
+#textbox .textC {
+	font-size: 30px;
+	color: #333333;
+}
+#textbox .textD {
+	font-size: 18px;
+	color: #666666;
+}
+#inTurn {
+	position:relative;/*对父级设置position:relative属性，对其子级设置position:absolute,实现子级在父级内任意定位*/
+	top:760px;
+	/*background-color: #CCCCCC;*/
+	height:400px;
+	width:1120px;
+	display:flex;     /*css3的弹性盒模型:justify-content: center; 子元素水平居中*/
+    align-items: center; /*子元素垂直居中*/
+}
+/*
+.vertical{
+  	position:absolute;  
+	top:50%;  父元素高度50%
+	transform:translate(0,-50%);
+}
+*/
+#button{
+	width:100px;
+	/*background:#666666;*/
+	float:left;
+	}
+#picbox{
+	width:333px;
+	/*background:#33FFFF;*/
+	float:left;
+	}
+#bottom {
+	position:absolute;/*对父级设置position:relative属性，对其子级设置position:absolute,实现子级在父级内任意定位*/
+	top:2950px;
+}
+
