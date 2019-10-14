@@ -297,8 +297,14 @@
 }
 .hr
 {
- height:1px;
- width:100%;
- background:#00CCFF;
- overflow:hidden;
+	height:1px;
+	width:100%;
+	background:#00CCFF;
+	overflow:hidden;
+}
+.titlebox {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #0000FF;
+	height:40px;
 }
