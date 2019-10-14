@@ -295,3 +295,10 @@
   text-decoration: underline;
   color: red;
 }
+.hr
+{
+ height:1px;
+ width:100%;
+ background:#00CCFF;
+ overflow:hidden;
+}
