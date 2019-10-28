@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HomePage</title>
+<link href="HomePage.css" rel="stylesheet" type="text/css" />
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<!--如何让banner图片适应不同屏幕大小:有两种方案，一是整体伸缩设置banner img属性width='100%'，二是保持核心内容定宽居中，两边留白。-->
+<!--高度塌陷:
+父元素包含的子元素，子元素多高。父亲没指定高度，默认子元素高。
+子元素设置浮动以后，子元素脱离文档流，此时子元素无法撑起父元素的高度，导致父元素的高度塌陷
+我们可以将父元素的高度写死，避免塌陷-->
+<body>
+	<div class="bannerbox">
+		<div class="banner"><img src="image/banner.jpg"></div>
+		<div class="nav"></div>
+		<div class="logo"><img src="image/完达山logo.png"></div>  
+		<div class="menu">
+			<ul>
+				<li><a href="#home">首页</a></li>
+				<li><a href="#news">新闻动态</a></li>
+				<li><a href="#contact">产品信息</a></li>
+				<li><a href="#about">公司介绍</a></li>
+				<li><a href="#about">联系我们</a></li>
+			</ul>
+		</div>			
+		<div class="search">
+			<form name="form1" method="post" action="">
+			<input type="text" name="names" value="站内搜索" size="30"  > 
+		</div>
+	</div>
+
+	<div id="apDiv1">
+		  <div id="left">
+				<p class="title">我们的牧场</p>
+				<div class="pic"><a href="module.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','image/33.jpg',1)"><img src="image/完达山-PC端首页-9_03.png" name="Image4" width="283" height="197" border="0" id="Image4" /></a></div>
+				<div class="news">
+				  <!--/*为什么不能直接定义a标签样式<a class=""？？？或者不是定义类.head{}而是定义.head a{}？？？*/-->
+				  <p class="head"><a href="#">牧场到餐桌</a></p>
+				  <p class="txt"><a href="#">自主开发，合作开发，引进开发。推陈出新，完达山每年都有几十项新产品投放市场。与美国联陈出新...</a></p>
+				  <p class="head"><a href="#">科技领先研发团队</a></p>
+				  <p class="txt"><a href="#">自主开发，合作开发，引进开发。推陈出新，完达山每年都有几十项新产品...</a></p>
+				</div>
+		  </div>
+	  
+		  <div id="right">
+				<p class="title">我们的工艺</p>
+				<div class="pic"><a href="fraction.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image5','','image/33.jpg',1)"><img src="image/完达山-PC端首页-9_05.png" name="Image5" width="283" height="197" border="0" id="Image5" /></a></div>
+				<div class="news">
+					<!--/*为什么不能直接定义a标签样式<a class=""？？？或者不是定义类.head{}而是定义.head a{}？？？*/-->
+				  <p class="head"><a href="#">牧场到餐桌</a></p>
+				  <p class="txt"><a href="#">自主开发，合作开发，引进开发。推陈出新，完达山每年都有几十项新产品投放市场。与美国联陈出新...</a></p>
+				  <p class="head"><a href="#">科技领先研发团队</a></p>
+				  <p class="txt"><a href="#">自主开发，合作开发，引进开发。推陈出新，完达山每年都有几十项新产品...</a></p>
+				</div>
+		  </div>
+	  <div class="clear"></div><!--父没指定高度解决高度塌陷:可以在父元素的最后，添加一个空白的div，由于这个div并没有浮动，所以他是可以撑开父元素的高度的-->
+	</div>
+	
+	<div class="apDiv2">
+		<div class="box">
+			<p class="ys1"><a href="#">奶粉系列</a></p>
+			<a href="#"><br><br><br><br><img src="image/奶粉1.png" /></a>		
+		</div>
+		<div class="box">
+			<p class="ys1"><a href="#">奶粉系列</a></p>
+			<a href="#"><br><br><br><br><img src="image/奶粉1.png" /></a>	
+		</div>	
+		<div class="box">
+			<p class="ys1"><a href="#">奶粉系列</a></p>
+			<a href="#"><br><br><br><br><img src="image/奶粉1.png" /></a>		
+		</div>
+	</div>
+	
+	<div class="div3">
+		<div class="leftshadow">
+			<div class="titlebox"><p><a href="#">新闻动态<span>更多</span></a></p></div>
+			<br>
+			<div class="picbox"><img src="image/timg.png"></div>
+			<div class="newsbox">
+				<ul>	
+				   <li><a href="#">2020年实现所有人民脱贫,扯蛋<span>2019-14-14</span></a></li>
+				   <li><a href="#">2020年实现所有人民脱贫<span>2019-14-14</span></a></li>				
+				   <li><a href="#">中国高考生人数逐年递减说明了什么<span>2019-19-19</span></a></li>		
+				   <li><a href="#">IT专业就业率第一<span>2019-19-19</span></a></li>			
+				   <li><a href="#">前程工作师前景如何<span>2019-19-19</span></a></li>			
+				   <li><a href="#">科技改变生活，10个新科技展示<span>2019-19-19</span></a></li>			
+				   <li><a href="#">学会管理时间<span>2019-19-19</span></a></li>			
+				</ul>
+			</div>
+		</div>
+		
+		<div class="rightshadow">
+			<div class="titlebox"><p><a href="#">品牌资讯<span>更多</span></a></p></div>
+			<br>
+			<div class="picbox"><img src="image/品牌.png"></div>
+			<div class="newsbox2">
+				<ul>	
+				   <li><a href="#">公司荣获“2015中国婴幼儿奶粉2015年“完达山”品牌价值突破...</a></li>
+				   <li><a href="#">完达山乳业连续五年入围“亚洲完达山--点燃诚信之光</a></li>				
+				   <li><a href="#">中国高考生人数逐年递减说明了什么</a></li>		
+				   <li><a href="#">IT专业就业率第一</a></li>			
+				   <li><a href="#">前程工作师前景如何</a></li>			
+				   <li><a href="#">科技改变生活，10个新科技展示</a></li>			
+				   <li><a href="#">学会管理时间</a></li>			
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
