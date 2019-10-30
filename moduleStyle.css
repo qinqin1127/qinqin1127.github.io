@@ -32,10 +32,10 @@ body {
 		font-size: 18px;
 		line-height:48px;/*文本垂直居中方式一：设置line-height与背景框同高*/
 		width:900px;
-		background:#00CCFF;
+		/*background:#00CCFF;*/
 		position:absolute;
 		top:140px;
-		left:560px;
+		left:560px;/*父元素宽度的50%*/
 		transform: translateX(-50%);
 		font-weight: lighter;
 }
@@ -72,8 +72,10 @@ body {
 }
 #cosmetic hr{
 	width:102px;
-	position:relative;/*相对于正常文档流的位置*/
+	position:absolute;/*相对于正常文档流的位置*/
 	top:102px;
+	left:560px;/*父元素宽度的50%*/
+	magin-left:-51px;
 }
 #title3 {
 	position:relative;/*相对于它原始的位置；*/
