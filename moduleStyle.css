@@ -75,7 +75,7 @@ body {
 	position:absolute;/*相对于正常文档流的位置*/
 	top:102px;
 	left:560px;/*父元素宽度的50%*/
-	magin-left:-51px;
+	transform: translateX(-50%);
 }
 #title3 {
 	position:relative;/*相对于它原始的位置；*/
