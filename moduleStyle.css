@@ -27,23 +27,35 @@ body {
 	top: 72px;
 	letter-spacing: 3px;
 }
-.header table{
+.menu{
+		font-family: "微软雅黑";
+		font-size: 18px;
+		line-height:48px;/*文本垂直居中方式一：设置line-height与背景框同高*/
+		width:900px;
+		background:#00CCFF;
+		position:absolute;
+		top:140px;
+		left:560px;
+		transform: translateX(-50%);
+		font-weight: lighter;
+}
+.menu table{
 	font-size: 20px;
 	width:900px;
 	height: 40px;
 	letter-spacing: 2px;
 }
 
-.header a {
+.menu a {
 	text-decoration: none;
 	color:#333333;
 	/*display: block;表格中的链接不可以成块显示，否则不能居中*/
 }
-.header a:hover {
+.menu a:hover {
 	text-decoration: underline;
 	color: #0000FF;
 }
-.header a:visited {
+.menu a:visited {
 	color: #999999;
 }
 #cosmetic {
