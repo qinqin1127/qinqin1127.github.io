@@ -32,10 +32,11 @@ body {
 		font-family: "微软雅黑";
 		font-size: 18px;
 		line-height:48px;/*文本垂直居中方式一：设置line-height与背景框同高*/
-		width:900px;/*各浏览器兼容居中方式一：自动外边距实现居中,需要特别注意的一点就是，必须为该容器指定宽度*/
+		width:900px;/*浏览器兼容居中方式一：自动外边距实现居中,需要特别注意的一点就是，必须为该容器指定宽度*/
 		margin-left:auto;
 		margin-right:auto;
-		/*background:#00CCFF;*/
+		margin-top:250px;
+		background:#00CCFF;
 		/*position:absolute;各浏览器兼容居中方式二：绝对定位
 		top:140px;
 		left:560px;父元素宽度的50%
