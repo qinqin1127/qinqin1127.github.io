@@ -72,7 +72,7 @@ body {
 }
 #cosmetic hr{
 	width:102px;
-	position:absolute;/*相对于正常文档流的位置*/
+	position:relative;/*相对于正常文档流的位置*/
 	top:102px;
 	left:560px;/*父元素宽度的50%*/
 	transform: translateX(-50%);
