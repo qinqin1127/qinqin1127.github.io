@@ -35,7 +35,7 @@ body {
 		width:900px;/*居中方式一：自动外边距实现居中,需要特别注意的一点就是，必须为该容器指定宽度*/
 		margin-left:auto;
 		margin-right:auto;
-		margin-top:170px;
+		margin-top:140px;
 		/*background:#00CCFF;*/
 		/*position:absolute;各浏览器兼容居中方式：绝对定位
 		top:140px;
